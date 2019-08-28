@@ -30,7 +30,7 @@ $wgMetaNamespace = "Tw-test-wiki";
 $wgScriptPath = "";
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer = "http://35.227.159.72:8080";
+$wgServer = "http://35.203.177.82:32191";
 
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;
@@ -44,8 +44,8 @@ $wgLogo = "$wgResourceBasePath/resources/assets/wiki.png";
 $wgEnableEmail = true;
 $wgEnableUserEmail = true; # UPO
 
-$wgEmergencyContact = "apache@35.227.159.72";
-$wgPasswordSender = "apache@35.227.159.72";
+$wgEmergencyContact = "apache@35.203.177.82";
+$wgPasswordSender = "apache@35.203.177.82";
 
 $wgEnotifUserTalk = false; # UPO
 $wgEnotifWatchlist = false; # UPO
@@ -80,7 +80,7 @@ $wgUseInstantCommons = false;
 # Periodically send a pingback to https://www.mediawiki.org/ with basic data
 # about this MediaWiki instance. The Wikimedia Foundation shares this data
 # with MediaWiki developers to help guide future development efforts.
-$wgPingback = true;
+$wgPingback = false;
 
 ## If you use ImageMagick (or any other shell command) on a
 ## Linux server, this will need to be set to the name of an
@@ -95,14 +95,14 @@ $wgShellLocale = "C.UTF-8";
 # Site language code, should be one of the list in ./languages/data/Names.php
 $wgLanguageCode = "en";
 
-$wgSecretKey = "47a8af09e515689f0e54ffe81e45d8bf7d36f40a4f880122c39921cbbc57f95e";
+$wgSecretKey = "f66df8713ca86d0c7759cd161cf7d40187c36eb2969e7ed2bbf2cd9659873975";
 
 # Changing this will log out all existing sessions.
 $wgAuthenticationTokenVersion = "1";
 
 # Site upgrade key. Must be set to a string (default provided) to turn on the
 # web installer while LocalSettings.php is in place
-$wgUpgradeKey = "066c330ce55493e2";
+$wgUpgradeKey = "7a5481cb8aaa7c9e";
 
 ## For attaching licensing metadata to pages, and displaying an
 ## appropriate copyright notice / icon. GNU Free Documentation
@@ -128,4 +128,5 @@ wfLoadSkin( 'Vector' );
 
 # End of automatically generated settings.
 # Add more configuration options below.
+
 

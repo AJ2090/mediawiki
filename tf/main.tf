@@ -41,6 +41,17 @@ resource "google_compute_instance" "kube_master" {
           agent    = false
     }
   }
+  
+  provisioner "file" {
+    source      = "${format("%s/apps/wikidbdump.tar.gz", path.module)}"
+    destination = "/tmp/wikidbdump.tar.gz"
+    connection {
+          type     = "ssh"
+          user     = "${var.ssh_user}"
+          private_key = "${file(var.ssh_private_key)}"
+          agent    = false
+    }
+  }
 }
 
 resource "google_compute_firewall" "ssh_fw_rule" {
