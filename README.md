@@ -34,4 +34,9 @@ Contents of 'mediawiki' are being copied while launching infrastructure using Te
 - `$ tar -xzf /tmp/mediawiki-0.1.0.tar.gz`
 - `$ bash appdeploy.sh`
 
-7) Access Mediawiki application over mentioned URL in output.
+Note: application deployment script will take a while to complete. Once completed you can check components using cmd on k8s master:
+
+`$ kubectl get pods`
+
+7) Browse through the application URL (given in output of appdeploy.sh) once all pods are running.
+
