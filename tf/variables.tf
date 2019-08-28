@@ -30,6 +30,9 @@ variable ssh_ip_ranges {
 variable ssh_user {
 }
 
+variable ssh_private_key {
+}
+
 variable metadata {
   description = "Metadata to be attached to the NAT gateway instance"
   type        = "map"

@@ -31,16 +31,16 @@ resource "google_compute_instance" "kube_master" {
 
   metadata_startup_script = "${file("${format("%s/startup.sh", path.module)}")}"
 
-  provisioner "remote-exec" {
-    script = "${format("%s/apps/appdeploy.sh", path.module)}"
+  provisioner "file" {
+    source      = "${format("%s/apps/mediawiki-0.1.0.tar.gz", path.module)}"
+    destination = "/tmp/mediawiki-0.1.0.tar.gz"
     connection {
           type     = "ssh"
           user     = "${var.ssh_user}"
           private_key = "${file(var.ssh_private_key)}"
-          agent    = true
+          agent    = false
     }
   }
-
 }
 
 resource "google_compute_firewall" "ssh_fw_rule" {

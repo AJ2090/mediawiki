@@ -1,4 +1,4 @@
 ssh_user = "avinash.jadhav"
-ssh_ip_ranges = ["42.107.76.8/32"]
-
+ssh_ip_ranges = ["182.75.63.58/32"]
+ssh_private_key = "/root/.ssh/google_new"
 metadata = {ssh-keys = "avinash.jadhav: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDJccY8rq2t0q7jNz9C8jYrlBKKqg03/KpQZEojEqgrsd18MlrSDboRqWxFDRenEbG02EHh1Z0Rp9uaV6ovYBXaCAQsGBFNc7B9PBZnmsb7qkRjLWzds73V6OMUMbx1119W0uEcY69nVkp+VkkTgI3+T8/zYLFWibMfTIWoWLvv2r75xugr90fahgZusBJQQpjuCRkI9CfkeQlj+Qx2yzmC+jJtBFZXc2jt/FA1VLfS+fwwdueLcJI7JDPEP8rvNdKzvjKTBv1yrkq2sOx6EeuzwGsSijA72T93QM6XRcAQvBFvtMGEE6TLdZkWIJARMmeTkJZMX5allDBmsPfwCRP4fKUyoCrq05OEXOAP/mfw2XbGdCgq4etatjvpkzO9PakNi5aZS10+kUmp0ifUjcdJZCrOOReh4+ICnuIsTUPrmnjSWLCiZ6e6CVywLWAp/cqP8RGy4IeVJSwo0Zg4jU4dEQIrL299a14nCPRaX5VaPBCltYKe8n9J7IkQ9D3AVcCeLYjWqIlY+mqyYYDHuEJgf2fo5y9s4Bo2OK1UwR0k4RMwemMJ64/khOWPowGrWrqBHb7LAZ+aT0T6HkT9bRXW7hvW/OzjOkWSeNr4mT26g85csf7lDHuYkJ73OY8JLrbYB322/Vd64XWsoEcIg9dPd29GljCa16XZLdZTrWdQBw== avinash.jadhav@localhost.localdomain"}
