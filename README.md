@@ -5,11 +5,11 @@ This repository consist of files to deploy Mediawiki on K8S cluster running on t
 2) 'mediawiki' dir contains necessary files to deploy Mediawiki app over K8S.
 3) Dockerfile: to create docker image of Mediawiki.
 
-Contents of 'mediawiki' are being copied while launching infrastructure using Terraform. In order to create and deploy Mediawiki, follow steps below:
+Contents of 'mediawiki' directory are being copied while launching infrastructure using Terraform. In order to create and deploy Mediawiki, follow steps below:
 
 1) Set up workstation
 - Install Terraform /gcloud utilities. These are required to create infra over GCP.
-- Create SSH keypair using below commands. SSH keypair is required as input in Terraform to copy files and allow SSH access to launched GCE instance.
+- Create SSH keypair using below commands. SSH keypair is required as input in Terraform to configure SSH access and copy files.
 
 2) Clone the repository
 
@@ -30,13 +30,12 @@ Contents of 'mediawiki' are being copied while launching infrastructure using Te
 - `$ terraform plan --var-file="myinfra.tfvars"`
 - `$ terraform apply --var-file="myinfra.tfvars"`
 
-6) Note down public ip from output of above command. SSH to this instance using specified private key. Execute below commands after login.
+6) Note down public ip from output of above command. SSH to this instance using specified private key and execute below commands
 - `$ tar -xzf /tmp/mediawiki-0.1.0.tar.gz`
 - `$ bash appdeploy.sh`
 
 Note: application deployment script will take a while to complete. Once completed you can check components using cmd on k8s master:
-
-`$ kubectl get pods`
+- `$ kubectl get pods`
 
 7) Browse through the application URL (given in output of appdeploy.sh) once all pods are running.
 
