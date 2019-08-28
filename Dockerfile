@@ -1,5 +1,9 @@
 FROM php:7.2-apache
-#https://hub.docker.com/_/php
+
+#https://www.mediawiki.org/wiki/Manual:Running_MediaWiki_on_Red_Hat_Linux
+#As per above doc, mediawiki is installed under /var/www/mediawiki, so configure apache for the same.
+
+#Refer 'https://hub.docker.com/_/php' to install php plugins, change apache configurations etc
 
 ENV APACHE_DOCUMENT_ROOT /var/www/mediawiki
 
@@ -23,7 +27,7 @@ RUN set -eux; \
 		opcache 
 
 
-
+# Download and extract application tarball
 WORKDIR /var/www/mediawiki
 ENV MEDIAWIKI_MAJOR_VERSION 1.33
 ENV MEDIAWIKI_BRANCH REL1_33
