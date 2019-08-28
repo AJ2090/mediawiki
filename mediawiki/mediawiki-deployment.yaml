@@ -22,7 +22,7 @@ spec:
         app: mediawiki
     spec:
       containers:
-      - image: mediawiki
+      - image: avinash2090/mediawiki
         name: tw-mediawiki
         ports:
         - containerPort: 80
@@ -36,9 +36,9 @@ spec:
             cpu: 300m
             memory: 512Mi
         volumeMounts:
-        - mountPath: "/var/www/html/images"
+        - mountPath: "/var/www/mediawiki/images"
           name: wiki-pv
-        - mountPath: "/var/www/html/LocalSettings.php"
+        - mountPath: "/var/www/mediawiki/LocalSettings.php"
           name: php-setting
           subPath: "LocalSettings.php"
       volumes:

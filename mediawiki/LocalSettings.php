@@ -19,8 +19,8 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 ## Uncomment this to disable output compression
 # $wgDisableOutputCompression = true;
 
-$wgSitename = "tw-test-wiki";
-$wgMetaNamespace = "Tw-test-wiki";
+$wgSitename = "tw-wiki";
+$wgMetaNamespace = "Tw-wiki";
 
 ## The URL base path to the directory containing the wiki;
 ## defaults for all runtime URL paths are based off of this.
@@ -71,8 +71,8 @@ $wgMemCachedServers = [];
 ## To enable image uploads, make sure the 'images' directory
 ## is writable, then set this to true:
 $wgEnableUploads = false;
-$wgUseImageMagick = true;
-$wgImageMagickConvertCommand = "/usr/bin/convert";
+#$wgUseImageMagick = true;
+#$wgImageMagickConvertCommand = "/usr/bin/convert";
 
 # InstantCommons allows wiki to use images from https://commons.wikimedia.org
 $wgUseInstantCommons = false;
@@ -95,14 +95,14 @@ $wgShellLocale = "C.UTF-8";
 # Site language code, should be one of the list in ./languages/data/Names.php
 $wgLanguageCode = "en";
 
-$wgSecretKey = "f66df8713ca86d0c7759cd161cf7d40187c36eb2969e7ed2bbf2cd9659873975";
+$wgSecretKey = "9a9bf584ab1e9801c76bb8ea200ab20de77762abd233d5d0d70db5db3efbce41";
 
 # Changing this will log out all existing sessions.
 $wgAuthenticationTokenVersion = "1";
 
 # Site upgrade key. Must be set to a string (default provided) to turn on the
 # web installer while LocalSettings.php is in place
-$wgUpgradeKey = "7a5481cb8aaa7c9e";
+$wgUpgradeKey = "ce0dd69b8da6f286";
 
 ## For attaching licensing metadata to pages, and displaying an
 ## appropriate copyright notice / icon. GNU Free Documentation
